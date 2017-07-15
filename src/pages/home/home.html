@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  
+<button ion-button secondary (click)="takePicture();">CAMERA</button>
+<button ion-button secondary (click)="flashing();">FLSHLIGHT</button>
+<button ion-button secondary (click)="load();">CARDVIEW</button>
+<button ion-button secondary (click)="presentToast();">TOAST</button>
+<button ion-button secondary (click)="showDialogBox();">DIALOG BOX</button>  
+<button ion-button secondary (click)="batStatus();">BATTERY STATUS</button>  
+{{batlev}}
+  <ion-item>
+    <ion-label fixed>Username</ion-label>
+    <ion-input type="text" [(ngModel)]="nm" value=""></ion-input>
+  </ion-item>
+<button ion-button secondary (click)="sendReq();">HTTP DEMO</button>  {{up}}
+  
+<button ion-button secondary (click)="spee();">SpeechRecognition</button>  {{txt}}
+<h3> HTTP SERVER DEMO </h3>
+<button ion-button secondary (click)="serverStrt();">START SERVER</button>
+<button ion-button secondary (click)="serverStp();">STOP SERVER</button>
+<button ion-button secondary (click)="getur();">GET URL</button> {{pth}}
+<button ion-button secondary (click)="getlcl();">getLocalPath</button>
+<button ion-button secondary (click)="goToLogin();">Login demo</button>
+<button ion-button secondary (click)="jsonDemo();">JSON DEMO</button> username= {{d}} password={{d}}
+ <img [src]="base64Image" *ngIf="base64Image" />
+   
+</ion-content>
